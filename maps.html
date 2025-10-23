@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps - Pinoy Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="maps-body">
+
+
+    <div class="maps-container">
+        <div class="maps-header">
+            <h1 class="text-gradient">
+                <i class="fas fa-map-marked-alt"></i>
+                Live Location Map
+            </h1>
+            <p class="text-light">Your current location is shown with a green circle</p>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-controls">
+                <button id="locateBtn" class="map-control-btn" title="My Location">
+                    <i class="fas fa-location-crosshairs"></i>
+                </button>
+                <button id="zoomInBtn" class="map-control-btn" title="Zoom In">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button id="zoomOutBtn" class="map-control-btn" title="Zoom Out">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <a href="translator.html" class="nav-item" data-tab="translator">
+                <i class="fas fa-language"></i>
+                <span class="nav-label">Translator</span>
+            </a>
+            <a href="ai-chat.html" class="nav-item" data-tab="ai-chat">
+                <i class="fas fa-robot"></i>
+                <span class="nav-label">AI Chat</span>
+            </a>
+            <a href="maps.html" class="nav-item active" data-tab="maps">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="nav-label">Maps</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

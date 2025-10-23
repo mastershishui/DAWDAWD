@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinoy Translator - Connect Through Language</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles to ensure 4 features fit in one line */
+        .features-grid-compact {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .feature-item-compact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 12px 8px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+        }
+
+        .feature-item-compact i {
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .feature-item-compact span {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.2;
+        }
+
+        .feature-item-compact:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .features-grid-compact {
+                gap: 8px;
+            }
+
+            .feature-item-compact {
+                padding: 10px 6px;
+            }
+
+            .feature-item-compact span {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Background Decoration -->
+
+<!-- Main Container -->
+<div class="main-container">
+    <div class="card">
+        <div class="card-header">
+            <h1 class="text-gradient">Welcome to Pinoy Translator</h1>
+            <p class="text-light">Connect deeper with Philippine languages</p>
+        </div>
+
+        <div class="card-body">
+            <button onclick="gologin()" class="btn login-btn">Log in</button>
+
+            <div class="or-divider">
+                <span>OR</span>
+            </div>
+
+            <button onclick="goSignup()" class="btn signup-btn">Sign Up</button>
+
+            <!-- Updated Features Grid - All in one line with compact styling -->
+            <div class="features-grid-compact">
+                <div class="feature-item-compact">
+                    <i class="fas fa-language"></i>
+                    <span>AI Translate</span>
+                </div>
+                <div class="feature-item-compact">
+                    <i class="fas fa-microphone"></i>
+                    <span>Voice Support</span>
+                </div>
+                <div class="feature-item-compact">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Automated</span>
+                </div>
+                <div class="feature-item-compact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

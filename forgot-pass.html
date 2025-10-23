@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Pinoy Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <!-- Background Decoration -->
+
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+
+        
+        <div class="card-header">
+            <h1 class="text-gradient">
+                <i class="fas fa-key"></i>
+                Reset Password
+            </h1>
+            <p class="text-light">Enter your email to reset your password</p>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="Enter your registered email">
+        </div>
+
+        <button class="btn reset-btn" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i>
+            SEND RESET LINK
+        </button>
+
+        <div class="instructions mt-3">
+            <h4 class="text-gradient">
+                <i class="fas fa-info-circle"></i>
+                Instructions:
+            </h4>
+            <div class="instruction-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span>Enter your email address above</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span>Click "SEND RESET LINK"</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span>Check your email for a password reset link</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span>Click the link in the email to reset your password</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

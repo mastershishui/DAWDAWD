@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinoy Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="translator-body">
+    <!-- Background Decoration -->
+
+
+    <!-- Top Bar -->
+    <div class="top-bar glass">
+        <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="user-menu">
+            
+        </div>
+    </div>
+
+    <!-- Slide-out Menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="" alt="Profile" class="menu-profile-picture" id="menuProfilePicture">
+                    <div class="user-avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <span class="username" id="menuUsername">Username</span>
+                    <a href="profile.html" class="edit-profile">
+                        <i class="fas fa-edit"></i>
+                        Edit Profile
+                    </a>
+                </div>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="menu-items">
+            
+            <a href="profile.html" class="menu-item">
+                <i class="fas fa-user"></i>
+                Profile
+            </a>
+            <a href="faq.html" class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                FAQs
+            </a>
+            <a href="about.html" class="menu-item">
+                <i class="fas fa-info-circle"></i>
+                About
+            </a>
+            <a href="#" class="menu-item logout" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i>
+                Log Out
+            </a>
+        </div>
+    </div>
+
+    <!-- Translator Container -->
+    <div class="translator-container">
+        <!-- Input Language Card -->
+        <div class="translate-card">
+            <div class="card-header">
+                <h3 class="text-gradient">
+                    <i class="fas fa-keyboard"></i>
+                    Input Text
+                </h3>
+            </div>
+
+            <select class="lang-select" id="inputLang">
+                <option>English</option>
+                <option>Tagalog</option>
+                <option>Bisaya</option>
+                <option>Ilocano</option>
+                <option>Hiligaynon</option>
+                <option>Kapampangan</option>
+                <option>Bicolano</option>
+                <option>Waray</option>
+                <option>Pangasinan</option>
+                <option>Maguindanao</option>
+            </select>
+            
+            <textarea id="inputText" class="text-area" placeholder="Type or speak your text here..."></textarea>
+            
+            <div class="action-buttons">
+                <button class="icon-btn" id="micBtn" title="Voice Input">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="icon-btn" title="Clear Text">
+                    <i class="fas fa-eraser"></i>
+                </button>
+            </div>
+            <div class="recording-status" id="recordingStatus"></div>
+        </div>
+
+        <!-- Output Language Card -->
+        <div class="translate-card">
+            <div class="card-header">
+                <h3 class="text-gradient">
+                    <i class="fas fa-translate"></i>
+                    Translation
+                </h3>
+            </div>
+
+            <select class="lang-select" id="outputLang">
+                <option>Tagalog</option>
+                <option>Bisaya</option>
+                <option>English</option>
+                <option>Ilocano</option>
+                <option>Hiligaynon</option>
+                <option>Kapampangan</option>
+                <option>Bicolano</option>
+                <option>Waray</option>
+                <option>Pangasinan</option>
+                <option>Maguindanao</option>
+            </select>
+            
+            <textarea id="outputText" class="text-area" readonly placeholder="Translation will appear here..."></textarea>
+
+            <div class="action-buttons">
+                <button class="icon-btn" id="speakBtn" title="Listen to Translation">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="icon-btn" title="Copy Translation">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <a href="translator.html" class="nav-item active" data-tab="translator">
+                <i class="fas fa-language"></i>
+                <span class="nav-label">Translator</span>
+            </a>
+            <a href="ai-chat.html" class="nav-item" data-tab="ai-chat">
+                <i class="fas fa-robot"></i>
+                <span class="nav-label">AI Chat</span>
+            </a>
+            <a href="maps.html" class="nav-item" data-tab="maps">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="nav-label">Maps</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
